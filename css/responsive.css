@@ -5,7 +5,7 @@
     align-items: center;
   }
   .rightnav {
-    width: 100%;
+    width: fit-content;
     justify-content: center;
     flex-direction: column;
   }
