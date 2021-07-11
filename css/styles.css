@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 .nav-list {
-  width: 50%;
+  width: 70%;
   display: flex;
   /* align-items: center;
   justify-content: center; */
@@ -44,7 +44,7 @@
 
 .rightnav {
   /* background-color: burlywood; */
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -120,13 +120,13 @@
   padding: 3px 10px;
 }
 .section {
-  height: 400px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   max-width: 80%;
   margin: auto;
   font-family: "Ubuntu", sans-serif;
+  padding: 100px;
 }
 .paras {
   display: flex;
@@ -157,14 +157,14 @@
   font-family: "Ubuntu", sans-serif;
 }
 .form {
-  max-width: 900px;
+  max-width: 62%;
   margin: 42px auto;
   margin-top: 0;
   margin-bottom: 50px;
 }
 .form .form-input {
   width: 100%;
-  padding: 2px 2px;
+  padding: 2px 12px;
   border: 2px solid gray;
   border-radius: 6px;
   font-size: 16px;
@@ -191,4 +191,54 @@
   align-content: center;
   color: white;
   font-family: "Ubuntu", sans-serif;
+}
+.burger {
+  position: absolute;
+  cursor: pointer;
+  right: 3%;
+  top: 10%;
+  display: none;
+}
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px 3px;
+}
+/* Max-width means if goes smaller than 1140 media queries will be fired */
+@media only screen and (max-width: 1140px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightnav {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 478px;
+    transition: all 1s ease-out;
+  }
+  #search {
+    width: 20%;
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav-resp {
+    height: 72px;
+  }
+  .v-class-resp {
+    opacity: 0;
+  }
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .section {
+    flex-direction: column-reverse;
+    padding: 10px 0px;
+  }
 }

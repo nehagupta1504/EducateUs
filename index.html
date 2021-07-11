@@ -11,20 +11,26 @@
       rel="stylesheet"
     />
     <link href="css/styles.css" rel="stylesheet" />
+
     <title>EducateUs- Education is my right!</title>
   </head>
   <body>
-    <nav class="navbar background">
-      <ul class="nav-list">
+    <nav class="navbar background h-nav-resp">
+      <ul class="nav-list v-class-resp">
         <div class="logo"><img src="/assets/img.jpeg" alt="logo" /></div>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#services">Contact Us</a></li>
       </ul>
-      <div class="rightnav">
+      <div class="rightnav v-class-resp">
         <input type="text" name="search" id="search" />
         <button class="btn btn-sm">Search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </nav>
     <section class="background firstsection">
@@ -141,8 +147,11 @@
         </div>
       </div>
       <footer class="background">
-        <p class="text-footer">Copyright &copy; 2021- All Rights Reserved</p>
+        <p class="text-footer">
+          Copyright &copy; www.educateus.com 2021- All Rights Reserved
+        </p>
       </footer>
     </section>
+    <script src="resp.js"></script>
   </body>
 </html>
